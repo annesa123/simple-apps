@@ -36,7 +36,7 @@ pipeline {
         stage('Push Image to DockerHub') {
             steps {
                 sh '''
-                docker build -t esanugraha/simple-apps-pipeline-apps
+                docker build -t esanugraha/simple-apps-pipeline-apps .
                 docker push esanugraha/simple-apps-pipeline-apps
                 docker images prune -a -f
                 '''

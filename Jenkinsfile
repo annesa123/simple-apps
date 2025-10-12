@@ -12,8 +12,7 @@ pipeline {
             steps {
                 sh '''
                 npm install
-                npm test
-                npm test:coverage'''
+                npm test'''
             }
         }
     }

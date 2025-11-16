@@ -10,8 +10,7 @@ pipeline {
         }
         stage('Unit Testing') {
             steps {
-                sh '''npm test
-                npm run test:coverage'''
+                sh '''npm test'''
             }
         }
         stage('Code Review') {

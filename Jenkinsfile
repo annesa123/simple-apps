@@ -33,8 +33,8 @@ pipeline {
         stage('Push Image and Clean Image') {
             steps {
                 sh '''
-                docker tag simple-apps-pipeline esanugraha/simple-apps-pipeline
-                docker push esanugraha/simple-apps-pipeline
+                docker tag simple-apps-pipeline-apps esanugraha/simple-apps-pipeline-apps
+                docker push esanugraha/simple-apps-pipeline-apps
                 docker image prune -a -f
                 '''
             }

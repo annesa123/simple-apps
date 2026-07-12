@@ -1,5 +1,5 @@
 pipeline {
-    agent { label "dev01-esa" }
+    agent { label "devops01-esa" }
     tools { nodejs "NodeJS-18.16.0" }
 
     stages {
